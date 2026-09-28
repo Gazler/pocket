@@ -6,8 +6,10 @@ defmodule PocketBreeze.MixProject do
       app: :pocket_breeze,
       version: "0.1.0",
       elixir: "~> 1.20",
+      pocket: [main: PocketBreeze.App, name: "pocket-breeze"],
       deps: [
-        {:breeze, "~> 0.5.0"}
+        {:breeze, "~> 0.5.0"},
+        {:pocket, path: "../..", runtime: false}
       ]
     ]
   end
